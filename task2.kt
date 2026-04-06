@@ -14,7 +14,7 @@ fun main() {
 
     for (i in rings.indices step 2) {
         val color = rings[i]
-        val sterchen_num = rings[i+1].digitToInt()
+        val sterchen_num = rings[i+1] - '0' 
         sterchen[sterchen_num].add(color)
     }
 
